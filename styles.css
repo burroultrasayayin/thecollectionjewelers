@@ -1,0 +1,261 @@
+/* The Collection Jewelers — mobile-first */
+:root {
+  --black: #0b0b0b;
+  --ink: #f4ead2;
+  --muted: #cbb98a;
+  --gold: #c5a35a;
+  --gold-soft: #e6d3a3;
+  --line: rgba(197, 163, 90, 0.28);
+  --card: #141414;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: "Palatino Linotype", Palatino, "Times New Roman", serif;
+  background: var(--black);
+  color: var(--ink);
+  line-height: 1.6;
+  font-size: 1.02rem;
+}
+a { color: var(--gold); text-decoration: none; }
+a:hover { color: var(--gold-soft); }
+img { max-width: 100%; height: auto; display: block; }
+.wrap { width: min(1120px, calc(100% - 2rem)); margin: 0 auto; }
+
+.site-header {
+  border-bottom: 1px solid var(--line);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  background: rgba(11,11,11,0.94);
+  z-index: 20;
+}
+.header-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+.brand {
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  color: var(--gold);
+  margin: 0;
+  text-decoration: none;
+}
+.nav-toggle { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.nav-button {
+  display: inline-block;
+  border: 1px solid var(--line);
+  color: var(--gold);
+  padding: 0.35rem 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  cursor: pointer;
+}
+nav {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.7rem;
+  padding: 0.6rem 0 0.2rem;
+}
+.nav-toggle:checked ~ nav { display: flex; }
+nav a {
+  color: var(--muted);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+nav a[aria-current="page"], nav a:hover { color: var(--gold-soft); }
+
+@media (min-width: 860px) {
+  .nav-button { display: none; }
+  nav { display: flex; flex-direction: row; width: auto; padding: 0; gap: 1.25rem; }
+}
+
+.hero, .page-hero { padding: 3.2rem 0 2.4rem; text-align: center; }
+.hero h1, .page-hero h1 {
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  margin: 0 0 0.9rem;
+}
+.hero p, .page-hero p {
+  margin: 0 auto;
+  max-width: 36rem;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+.actions { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; margin-top: 1.4rem; }
+.btn {
+  display: inline-block;
+  border: 1px solid var(--gold);
+  background: var(--gold);
+  color: var(--black);
+  padding: 0.7rem 1.15rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-family: inherit;
+  cursor: pointer;
+}
+.btn:hover { background: var(--gold-soft); color: var(--black); }
+.btn-ghost { background: transparent; color: var(--gold); }
+.btn-ghost:hover { background: transparent; color: var(--gold-soft); }
+
+section { padding: 0 0 3.2rem; }
+h2 {
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  color: var(--gold);
+  text-align: center;
+  margin: 0 0 1.75rem;
+}
+.lede {
+  text-align: center;
+  color: var(--muted);
+  max-width: 38rem;
+  margin: -0.8rem auto 1.8rem;
+}
+
+#inventory-grid, .inventory-grid, .grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+@media (min-width: 600px) {
+  #inventory-grid, .inventory-grid, .grid-2, .grid-3 { grid-template-columns: 1fr 1fr; }
+}
+@media (min-width: 900px) {
+  #inventory-grid, .inventory-grid, .grid-3 { grid-template-columns: repeat(3, 1fr); }
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  padding: 1rem 1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+.card .media {
+  aspect-ratio: 1 / 1;
+  background: #1b1b1b;
+  border: 1px solid var(--line);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card .media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img-fallback {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, #2a2418 0%, #141414 70%);
+}
+.card h3 {
+  margin: 0.35rem 0 0;
+  font-size: 1.05rem;
+  font-weight: 400;
+  line-height: 1.3;
+}
+.meta, .desc, .price { margin: 0; font-size: 0.92rem; }
+.meta { color: var(--gold); letter-spacing: 0.04em; }
+.desc, .price { color: var(--muted); }
+.status {
+  margin-top: auto;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold-soft);
+}
+.empty, .noscript {
+  text-align: center;
+  color: var(--muted);
+  grid-column: 1 / -1;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin: 0 0 1.5rem;
+}
+.filter-btn {
+  font: inherit;
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  padding: 0.4rem 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  cursor: pointer;
+}
+.filter-btn[aria-pressed="true"], .filter-btn:hover {
+  color: var(--black);
+  background: var(--gold);
+  border-color: var(--gold);
+}
+
+.prose { max-width: 40rem; margin: 0 auto; color: var(--muted); }
+.prose p { margin: 0 0 1rem; }
+.steps { max-width: 40rem; margin: 0 auto; padding: 0; list-style: none; counter-reset: step; }
+.steps li {
+  position: relative;
+  padding: 0 0 1.3rem 3rem;
+  color: var(--muted);
+  border-left: 1px solid var(--line);
+  margin-left: 0.7rem;
+}
+.steps li:last-child { border-left-color: transparent; }
+.steps li::before {
+  counter-increment: step;
+  content: counter(step);
+  position: absolute;
+  left: -0.85rem;
+  top: 0;
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 1px solid var(--gold);
+  background: var(--black);
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+form { max-width: 32rem; margin: 0 auto; display: grid; gap: 0.85rem; }
+label { display: grid; gap: 0.3rem; color: var(--gold-soft); }
+input, textarea {
+  font: inherit;
+  color: var(--ink);
+  background: #101010;
+  border: 1px solid var(--line);
+  padding: 0.7rem 0.75rem;
+  width: 100%;
+}
+textarea { min-height: 8rem; resize: vertical; }
+.hp { position: absolute; left: -9999px; height: 0; width: 0; overflow: hidden; }
+.form-note, .contact-note { text-align: center; color: var(--muted); }
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 1.4rem 0 2.2rem;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.92rem;
+}

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://thecollectionjewelers.com/</loc>
-  </url>
+  <url><loc>https://thecollectionjewelers.com/</loc></url>
+  <url><loc>https://thecollectionjewelers.com/watches.html</loc></url>
+  <url><loc>https://thecollectionjewelers.com/about.html</loc></url>
+  <url><loc>https://thecollectionjewelers.com/how-to-buy.html</loc></url>
+  <url><loc>https://thecollectionjewelers.com/contact.html</loc></url>
 </urlset>

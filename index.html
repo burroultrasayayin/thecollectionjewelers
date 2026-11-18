@@ -4,179 +4,69 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>The Collection Jewelers | Luxury Watches</title>
-  <meta name="description" content="Luxury watches from The Collection Jewelers. Every piece must be reserved and paid in advance. Contact us through Facebook.">
+  <meta name="description" content="A curated collection of luxury watches, including Rolex and Patek Philippe. Price on request. Every piece must be reserved first, and payment is required in advance.">
   <link rel="canonical" href="https://thecollectionjewelers.com/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="The Collection Jewelers | Luxury Watches">
-  <meta property="og:description" content="Luxury watches from The Collection Jewelers. Every piece must be reserved and paid in advance. Contact us through Facebook.">
+  <meta property="og:description" content="A curated collection of luxury watches, including Rolex and Patek Philippe. Price on request. Every piece must be reserved first, and payment is required in advance.">
   <meta property="og:url" content="https://thecollectionjewelers.com/">
   <meta property="og:site_name" content="The Collection Jewelers">
-  <script type="application/ld+json">
+  <meta property="og:image" content="https://thecollectionjewelers.com/images/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "JewelryStore",
     "name": "The Collection Jewelers",
-    "url": "https://thecollectionjewelers.com/"
+    "url": "https://thecollectionjewelers.com/",
+    "description": "A curated collection of luxury watches. Every piece must be reserved and paid in advance."
   }
   </script>
-  <style>
-    :root {
-      --black: #0b0b0b;
-      --ink: #f4ead2;
-      --muted: #cbb98a;
-      --gold: #c5a35a;
-      --gold-soft: #e6d3a3;
-      --line: rgba(197, 163, 90, 0.28);
-      --card: #141414;
-    }
-    * { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; }
-    body {
-      font-family: "Palatino Linotype", Palatino, "Times New Roman", serif;
-      background: var(--black);
-      color: var(--ink);
-      line-height: 1.6;
-    }
-    a { color: var(--gold); }
-    a:hover { color: var(--gold-soft); }
-    img { max-width: 100%; display: block; }
-    .wrap {
-      width: min(1120px, calc(100% - 2.5rem));
-      margin: 0 auto;
-    }
-    header.site-header {
-      padding: 1.5rem 0 1.25rem;
-      border-bottom: 1px solid var(--line);
-    }
-    .brand {
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      font-size: 0.82rem;
-      color: var(--gold);
-      margin: 0;
-    }
-    .hero {
-      padding: 4.25rem 0 3.25rem;
-      text-align: center;
-    }
-    .hero h1 {
-      font-size: clamp(2.1rem, 5vw, 3.6rem);
-      font-weight: 400;
-      letter-spacing: 0.04em;
-      margin: 0 0 0.9rem;
-    }
-    .hero p {
-      margin: 0 auto;
-      max-width: 36rem;
-      color: var(--muted);
-      font-size: 1.08rem;
-    }
-    section { padding: 0 0 3.5rem; }
-    h2 {
-      font-weight: 400;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      font-size: 0.95rem;
-      color: var(--gold);
-      text-align: center;
-      margin: 0 0 1.75rem;
-    }
-    #inventory-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1.25rem;
-    }
-    .card {
-      background: var(--card);
-      border: 1px solid var(--line);
-      padding: 1rem 1rem 1.2rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.55rem;
-    }
-    .card .media {
-      aspect-ratio: 1 / 1;
-      background: #1b1b1b;
-      border: 1px solid var(--line);
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .card .media img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    .img-fallback {
-      width: 100%;
-      height: 100%;
-      background: radial-gradient(circle at center, #2a2418 0%, #141414 70%);
-    }
-    .card h3 {
-      margin: 0.35rem 0 0;
-      font-size: 1.05rem;
-      font-weight: 400;
-      line-height: 1.3;
-    }
-    .meta, .desc, .price {
-      margin: 0;
-      font-size: 0.92rem;
-    }
-    .meta { color: var(--gold); letter-spacing: 0.04em; }
-    .desc, .price { color: var(--muted); }
-    .status {
-      margin-top: auto;
-      font-size: 0.8rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--gold-soft);
-    }
-    .empty, .noscript {
-      text-align: center;
-      color: var(--muted);
-      grid-column: 1 / -1;
-    }
-    .contact {
-      text-align: center;
-      padding-bottom: 4rem;
-    }
-    .contact p {
-      margin: 0 auto 0.9rem;
-      max-width: 36rem;
-      color: var(--muted);
-    }
-    footer.site-footer {
-      border-top: 1px solid var(--line);
-      padding: 1.4rem 0 2.2rem;
-      text-align: center;
-      color: var(--muted);
-      font-size: 0.92rem;
-    }
-  </style>
 </head>
 <body>
   <header class="site-header">
-    <div class="wrap">
-      <p class="brand">The Collection Jewelers</p>
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">The Collection Jewelers</a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-button">Menu</label>
+      <nav>
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="watches.html">Watches</a>
+        <a href="about.html">About</a>
+        <a href="how-to-buy.html">How to buy</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
   </header>
   <main>
     <section class="hero wrap">
       <h1>The Collection Jewelers</h1>
-      <p>A curated collection of luxury watches. Every piece must be reserved and paid in advance, because watches are stored in different locations.</p>
+      <p>A curated collection of luxury watches, including Rolex and Patek Philippe. Every piece must be reserved and paid in advance, because watches are stored in different locations. Price on request.</p>
+      <div class="actions">
+        <a class="btn" href="watches.html">See the watches</a>
+        <a class="btn btn-ghost" href="contact.html">Contact us</a>
+      </div>
     </section>
-    <section class="wrap" id="inventory" aria-labelledby="inventory-heading">
-      <h2 id="inventory-heading">Inventory</h2>
-      <div id="inventory-grid"></div>
+    <section class="wrap brand-section" aria-labelledby="rolex-heading">
+      <h2 id="rolex-heading">Rolex</h2>
+      <p class="lede">From current stock. Price on request. Reserve first; payment is required in advance.</p>
+      <div class="inventory-grid" data-brand-section="Rolex" data-limit="3"></div>
+      <p class="contact-note"><a class="btn btn-ghost" href="watches.html#rolex">More Rolex</a></p>
+    </section>
+    <section class="wrap brand-section" aria-labelledby="patek-heading">
+      <h2 id="patek-heading">Patek Philippe</h2>
+      <p class="lede">From current stock. Price on request. Reserve first; payment is required in advance.</p>
+      <div class="inventory-grid" data-brand-section="Patek Philippe" data-limit="3"></div>
+      <p class="contact-note"><a class="btn btn-ghost" href="watches.html#patek">More Patek Philippe</a></p>
+    </section>
+    <section class="wrap" aria-labelledby="featured-heading">
+      <h2 id="featured-heading">More from the collection</h2>
+      <div id="inventory-grid" data-featured="6"></div>
       <noscript>
-        <p class="noscript">JavaScript is needed to view the current inventory. You can also open inventory.json in this site’s files, or contact us through Facebook.</p>
+        <p class="noscript">JavaScript is needed to view the current inventory. You can also open inventory.json, or contact us through Facebook.</p>
       </noscript>
-    </section>
-    <section class="contact wrap" id="contact" aria-labelledby="contact-heading">
-      <h2 id="contact-heading">Contact us</h2>
-      <p>Contact us through Facebook to reserve a watch.</p>
-      <p>Every piece must be reserved and paid in advance, because pieces are stored in different locations.</p>
+      <p class="contact-note" style="margin-top:1.5rem;"><a class="btn btn-ghost" href="watches.html">View the full collection</a></p>
     </section>
   </main>
   <footer class="site-footer">
@@ -184,69 +74,6 @@
       <p>The Collection Jewelers</p>
     </div>
   </footer>
-  <script>
-    (function () {
-      var grid = document.getElementById("inventory-grid");
-      if (!grid) return;
-
-      function escapeHtml(value) {
-        return String(value == null ? "" : value)
-          .replace(/&/g, "&amp;")
-          .replace(/</g, "&lt;")
-          .replace(/>/g, "&gt;")
-          .replace(/"/g, "&quot;");
-      }
-
-      function showEmpty() {
-        grid.innerHTML = '<p class="empty">New inventory coming soon</p>';
-      }
-
-      function cardHtml(item) {
-        var name = escapeHtml(item.name || "");
-        var category = escapeHtml(item.category || "");
-        var description = escapeHtml(item.description || "");
-        var status = escapeHtml(item.status || "");
-        var price = item.price ? '<p class="price">' + escapeHtml(item.price) + "</p>" : "";
-        var reference = item.reference ? escapeHtml(item.reference) : "";
-        var alt = name || "Luxury watch";
-        var media;
-        if (item.image) {
-          media = '<div class="media"><img src="' + escapeHtml(item.image) + '" alt="' + alt + '"></div>';
-        } else {
-          media = '<div class="media"><div class="img-fallback" role="img" aria-label="' + alt + '"></div></div>';
-        }
-        var metaParts = [];
-        if (category) metaParts.push(category);
-        if (reference) metaParts.push("Ref. " + reference);
-        var meta = metaParts.length ? '<p class="meta">' + metaParts.join(" · ") + "</p>" : "";
-        return (
-          '<article class="card">' +
-            media +
-            "<h3>" + name + "</h3>" +
-            meta +
-            (description ? '<p class="desc">' + description + "</p>" : "") +
-            price +
-            (status ? '<p class="status">' + status + "</p>" : "") +
-          "</article>"
-        );
-      }
-
-      fetch("inventory.json")
-        .then(function (res) {
-          if (!res.ok) throw new Error("Could not load inventory");
-          return res.json();
-        })
-        .then(function (items) {
-          if (!items || !items.length) {
-            showEmpty();
-            return;
-          }
-          grid.innerHTML = items.map(cardHtml).join("");
-        })
-        .catch(function () {
-          showEmpty();
-        });
-    })();
-  </script>
+  <script src="inventory.js"></script>
 </body>
 </html>

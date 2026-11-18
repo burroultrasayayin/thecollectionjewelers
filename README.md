@@ -1,27 +1,31 @@
 # The Collection Jewelers website
 
-This repository holds a single landing page for The Collection Jewelers, a luxury watch collection.
+A multi-page site for The Collection Jewelers. Plain HTML, CSS, and a little JavaScript. No build step.
 
-There are no wholesale or cost prices anywhere in this project. Public price text, when shown, is only “Inquire for price”.
+There are no wholesale or cost prices anywhere in this project. Public price text is “Price on request” on the Rolex and Patek Philippe pieces, and “Inquire for price” on earlier items. There are no dollar amounts.
 
-## Files
+## Pages
 
-- `index.html` — the only page. It loads inventory from `inventory.json`.
-- `inventory.json` — the watch list shown on the page. Edit this file to add, remove, or change pieces.
-- `CNAME` — points GitHub Pages at thecollectionjewelers.com.
-- `robots.txt` and `sitemap.xml` — basic search-engine files.
+- `index.html` — home, with Rolex and Patek Philippe highlights plus more from the collection
+- `watches.html` — Rolex and Patek Philippe sections, then the full inventory with brand filters
+- `about.html`
+- `how-to-buy.html` — reservation and prepaid payment
+- `contact.html` — inquiry form, plus “Contact us through Facebook”
+- `inventory.json` — the single watch list used by the home and watches pages
+- `inventory.js` — loads that list
+- `styles.css`, `images/og.jpg`, `CNAME`, `robots.txt`, `sitemap.xml`
+
+Preview screenshots (`preview-desktop.png`, `preview-mobile.png`) are for review only. Do not commit them.
 
 ## How to update the inventory
 
 1. Open `inventory.json`.
 2. Add, remove, or edit an object in the array.
-3. Save the file and commit the change. After GitHub Pages rebuilds, the site will show the new list.
+3. Save the file and commit the change. After GitHub Pages rebuilds, both the home page and the watches page will use the new list.
 
-If `inventory.json` is empty (`[]`) or cannot be loaded, the page shows “New inventory coming soon”.
+If `inventory.json` is empty (`[]`) or cannot be loaded, the pages show “New inventory coming soon”.
 
 ### JSON template
-
-Copy this object into the array and replace the placeholder text:
 
 ```json
 {
@@ -37,12 +41,8 @@ Copy this object into the array and replace the placeholder text:
 }
 ```
 
-- `name` is the headline on the card.
-- `category` should stay `"Watch"`.
-- `description` can include the reference, condition (for example New or Pre-owned), and year.
-- `image` should be a public image URL, or an empty string `""` to use the styled placeholder.
 - `price`, if present, is retail inquiry text only. Do not add wholesale or cost prices.
-- `status` is shown on the card, for example `"Available – reserve to view"`.
-- `brand`, `model`, and `reference` are optional helpers for editing and are also used on the card when present.
+- Keep image URLs as they are unless you are replacing a photo.
+- Every piece must be reserved and paid in advance, because pieces are stored in different locations.
 
-Every piece must be reserved and paid in advance, because pieces are stored in different locations. Contact is through Facebook.
+The contact form posts to FormSubmit at `lafamdmc@gmail.com`, subject “New Collection Jewelers inquiry”.

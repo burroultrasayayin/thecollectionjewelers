@@ -328,5 +328,115 @@
     "brand": "BR",
     "model": "Starliner 30mm Stainless Steel Quartz",
     "reference": "A7140C2/G661/368A"
+  },
+  {
+    "name": "Rolex Daytona Steel Ceramic Bezel “Panda”",
+    "category": "Watch",
+    "description": "Reference 126500LN. Pre-owned, 2025. White “Panda” dial.",
+    "image": "https://mlagroup.s3.ap-southeast-1.amazonaws.com/saved%20for%20web/76909.jpg",
+    "price": "Price on request",
+    "status": "Reserve first. Payment in advance.",
+    "brand": "Rolex",
+    "model": "Daytona Steel Ceramic Bezel “Panda”",
+    "reference": "126500LN"
+  },
+  {
+    "name": "Rolex Daytona Rose Gold “Le Mans”",
+    "category": "Watch",
+    "description": "Reference 126525LN. New, 2026. Black dial, black Cerachrom bezel.",
+    "image": "https://mlagroup.s3.ap-southeast-1.amazonaws.com/saved%20for%20web/56476.jpg",
+    "price": "Price on request",
+    "status": "Reserve first. Payment in advance.",
+    "brand": "Rolex",
+    "model": "Daytona Rose Gold Black Cerachrom Bezel “Le Mans”",
+    "reference": "126525LN"
+  },
+  {
+    "name": "Rolex GMT-Master II “Pepsi” Steel",
+    "category": "Watch",
+    "description": "Reference 126710BLRO. Pre-owned, 2022. Pepsi bezel.",
+    "image": "https://mlagroup.s3.ap-southeast-1.amazonaws.com/saved%20for%20web/93369.jpg",
+    "price": "Price on request",
+    "status": "Reserve first. Payment in advance.",
+    "brand": "Rolex",
+    "model": "GMT-Master II “Pepsi” Steel",
+    "reference": "126710BLRO"
+  },
+  {
+    "name": "Rolex GMT-Master II “Bruce Wayne” Steel",
+    "category": "Watch",
+    "description": "Reference 126710GRNR. Pre-owned, 2025. Black-and-grey bezel.",
+    "image": "https://mlagroup.s3.ap-southeast-1.amazonaws.com/saved%20for%20web/70866.jpg",
+    "price": "Price on request",
+    "status": "Reserve first. Payment in advance.",
+    "brand": "Rolex",
+    "model": "GMT-Master II “Bruce Wayne” Steel",
+    "reference": "126710GRNR"
+  },
+  {
+    "name": "Rolex Land-Dweller 40mm Steel and White Gold",
+    "category": "Watch",
+    "description": "Reference 127334. 2026. White honeycomb motif dial.",
+    "image": "https://mlagroup.s3.ap-southeast-1.amazonaws.com/saved%20for%20web/60146.jpg",
+    "price": "Price on request",
+    "status": "Reserve first. Payment in advance.",
+    "brand": "Rolex",
+    "model": "Land-Dweller 40mm Steel and White Gold",
+    "reference": "127334"
+  },
+  {
+    "name": "Patek Philippe World Time Cloisonné Enamel Rose Gold",
+    "category": "Watch",
+    "description": "Reference 5131R-011. Pre-owned, 2017. Cloisonné enamel dial.",
+    "image": "https://mlagroup.s3.ap-southeast-1.amazonaws.com/saved%20for%20web/37869.jpg",
+    "price": "Price on request",
+    "status": "Reserve first. Payment in advance.",
+    "brand": "Patek Philippe",
+    "model": "World Time 39.5mm Cloisonné Enamel Dial Rose Gold",
+    "reference": "5131R-011"
+  },
+  {
+    "name": "Patek Philippe Nautilus Travel Time Flyback Chronograph",
+    "category": "Watch",
+    "description": "Reference 5990/1A-011. Pre-owned, 2023. Blue dial, stainless steel.",
+    "image": "https://mlagroup.s3.ap-southeast-1.amazonaws.com/saved%20for%20web/36934.jpg",
+    "price": "Price on request",
+    "status": "Reserve first. Payment in advance.",
+    "brand": "Patek Philippe",
+    "model": "Nautilus Travel Time Flyback Chronograph 40.5mm Stainless Steel",
+    "reference": "5990/1A-011"
+  },
+  {
+    "name": "Patek Philippe Nautilus Annual Calendar Moon Phases, Tiffany Dial",
+    "category": "Watch",
+    "description": "Reference 5726/1A-014. Pre-owned, 2020. Blue Tiffany-stamped dial, stainless steel.",
+    "image": "https://mlagroup.s3.ap-southeast-1.amazonaws.com/saved%20for%20web/27513.jpg",
+    "price": "Price on request",
+    "status": "Reserve first. Payment in advance.",
+    "brand": "Patek Philippe",
+    "model": "Nautilus 40.5mm Annual Calendar Moon Phases Stainless Steel, Tiffany-stamped Dial",
+    "reference": "5726/1A-014"
+  },
+  {
+    "name": "Patek Philippe Aquanaut 40.8mm Stainless Steel",
+    "category": "Watch",
+    "description": "Reference 5167/1A-001. Pre-owned, 2016. Black dial.",
+    "image": "https://mlagroup.s3.ap-southeast-1.amazonaws.com/saved%20for%20web/53681.jpg",
+    "price": "Price on request",
+    "status": "Reserve first. Payment in advance.",
+    "brand": "Patek Philippe",
+    "model": "Aquanaut 40.8mm Selfwinding Stainless Steel",
+    "reference": "5167/1A-001"
+  },
+  {
+    "name": "Patek Philippe Nautilus 50th Anniversary White Gold",
+    "category": "Watch",
+    "description": "Reference 5810/1G-001. 2026. Blue dial. Limited edition of 2,000 pieces.",
+    "image": "https://mlagroup.s3.ap-southeast-1.amazonaws.com/saved%20for%20web/65016.jpg",
+    "price": "Price on request",
+    "status": "Reserve first. Payment in advance.",
+    "brand": "Patek Philippe",
+    "model": "Nautilus 41mm White Gold Limited Edition of 2,000 (50th Anniversary)",
+    "reference": "5810/1G-001"
   }
 ]
